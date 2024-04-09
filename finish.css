@@ -1,0 +1,156 @@
+/* Resetting Margins and Padding for the Body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Top Left Button Styling */
+.top-left-button {
+  position: absolute;
+  top: 18px;
+  left: 220px;
+  z-index: 1;
+  padding: 10px 10px;
+  border: none;
+  background-color: rgb(244, 241, 241);
+  color: #f0b6d4;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Top Left Image Styling */
+.top-left-image {
+  position: absolute;
+  top: 15px;
+  left: 100px;
+  z-index: 1;
+}
+
+/* Container Styling */
+.container {
+  width: 900px;
+  height: 500px;
+  margin: 80px auto;
+  padding: 40px;
+  background-color: transparent;
+  text-align: center;
+}
+
+/* Heading Styling */
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Paragraph Styling */
+p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+/* Options Styling */
+.options {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+/* Option Styling */
+.option {
+  flex-basis: 30%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: transform 0.3s ease;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+/* Hover Effect for Option */
+.option:hover {
+  transform: scale(1.1);
+}
+
+/* Option Image Styling */
+.option img {
+  max-width: 150px;
+  margin-bottom: 5px;
+}
+
+/* Option Heading Styling */
+.option h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Option Checkbox Styling */
+.option input[type="checkbox"] {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  -webkit-appearance: none;
+  appearance: none;
+  border: 2px solid #f0b6d4;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Checked Checkbox Styling */
+.option input[type="checkbox"]:checked {
+  background-color: #E95950;
+}
+
+/* Checked Checkbox Icon Styling */
+.option input[type="checkbox"]:checked::after {
+  content: '\2713';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  color: #fff;
+}
+
+/* Finish Button Styling */
+.finish-button {
+  width: 20%;
+  background-color: #E95950;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover Effect for Finish Button */
+.finish-button:hover {
+  background-color: #c84842;
+}
+
+/* Disabled Finish Button Styling */
+.finish-button:disabled {
+  background-color: #f0b6d4;
+  cursor: not-allowed;
+}
+
+/* Selection Text Styling */
+.selection-text {
+  font-size: 14px;
+  color: #666;
+  margin-top: 20px;
+  font-weight: bold;
+}

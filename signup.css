@@ -1,0 +1,151 @@
+/* Resetting Margins and Padding for the Body */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Container Styling */
+.container {
+  height: 100vh;
+}
+
+/* Left Container Styling */
+.left {
+  width: 40%;
+  background-color: #f3cf85;
+  float: left;
+  background-image: url("img/signup.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 507px 550px;
+  position: relative;
+}
+
+/* Right Container Styling */
+.right {
+  width: 60%;
+  background-color: white;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Text Styling */
+.text {
+  position: absolute;
+  bottom: 10px;
+  left: 70px;
+  color: brown;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Inner Container Styling */
+.inner-container {
+  width: 80%; /* Adjusted for smaller screens */
+  max-width: 400px; /* Added for larger screens */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Error Message Styling */
+.error {
+  color: red;
+  height: 20px;
+}
+
+/* Form Styling */
+.form-container {
+  margin-bottom: 20px;
+}
+
+/* Form Group Styling */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Form Group Row and Column Styling */
+.form-group-row {
+  display: flex;
+  flex-wrap: wrap; /* Added for smaller screens */
+}
+
+.form-group-col {
+  width: 100%; /* Adjusted for smaller screens */
+}
+
+/* Label Styling */
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Input and Button Styling */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  width: 100%; /* Adjusted for smaller screens */
+  padding: 10px;
+  background-color: rgb(202, 73, 88);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Terms Styling */
+.terms {
+  margin-bottom: 20px;
+}
+
+/* Captcha Styling */
+.captcha {
+  font-size: 14px;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+  .container {
+    height: auto;
+    overflow: hidden; /* Added to prevent overlapping */
+  }
+  
+  .left {
+    width: 100%;
+    float: none;
+    background-size: cover; /* Adjusted for smaller screens */
+    background-position: top; /* Adjusted for smaller screens */
+  }
+
+  .right {
+    width: 100%;
+    float: none;
+  }
+
+  .text {
+    position: relative;
+    text-align: center; /* Adjusted for smaller screens */
+    margin-top: 20px; /* Added for smaller screens */
+  }
+
+  .inner-container {
+    width: 100%;
+    padding: 10px; /* Adjusted for smaller screens */
+  }
+
+  button[type="submit"] {
+    width: 100%;
+  }
+
+  .form-group-col {
+    width: 100%;
+  }
+}

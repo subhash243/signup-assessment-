@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Page</title>
+  <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+  <img src="img/logo.png" alt="Logo" class="top-left-image">
+  <div class="container">
+    <main>
+      <h2>Welcome! Let's create your profile</h2>
+      <p>Let others get to know you better! You can do these later</p>
+      <h2 style="font-family: Arial, Helvetica, sans-serif; font-size: 20px;";>Add an Avatar</h2>
+      <div class="avatar">
+        <div class="avatar-placeholder">
+          <label for="avatar-input" class="plus-icon">
+            <img src="img/iconimg.png" alt="Camera">
+          </label>
+          <input type="file" id="avatar-input" accept="image/*" style="display: none;">
+        </div>
+        <div class="avatar-options">
+          <button class="choose-image-btn">Choose image</button>
+          <p class="defaults-text"><a href="#" style=" text-decoration:none; color: black;"> &gt; Or choose one of our defaults</a></p>
+        </div>
+        <div class="avatar-image" id="avatar-image"></div>
+      </div>
+      <div class="location">
+        <h3>Add your location</h3>
+        <input type="text" id="location-input" placeholder="Enter a location">
+      </div>
+      <a href="finish.html"><button class="next-btn" id="next-btn" disabled>Next</button></a>
+    </main>
+  </div>
+  <script src="profile.js"></script>
+</body>
+</html>
